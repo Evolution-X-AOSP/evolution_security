@@ -2,6 +2,8 @@ This repository belongs to ```vendor/evolution/build/target/product/security```
 
 After cloning to the specific path, please run generate-keys.sh
 
+Please note, that ```mka evolution``` may not work properly if you have this repository cloned.
+
 Please refer to [this AOSP documentation](https://android.googlesource.com/platform/external/avb/+/refs/tags/android-11.0.0_r39/README.md#build-system-integration) on how to assign custom AVB keys
 
 Please check out the followings

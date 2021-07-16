@@ -20,13 +20,10 @@
 # Define security directory
 PROD_CERTS := vendor/evolution/build/target/product/security
 
-#
-# Recovery keys
-#
-# Extra recovery keys, despite -o being defined on our signed target file...
 # Somehow, our build system managed to not include releasekey in which we have to
 # investigate,
-# Explicitly define the extra recovery key so recovery will always know our key as
-# the temporary solution.
+# Explicitly define the default key.
 #
-PRODUCT_EXTRA_RECOVERY_KEYS := $(PROD_CERTS)/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := $(PROD_CERTS)/releasekey
+# PRODUCT_OTA_PUBLIC_KEYS := $(PROD_CERTS)/releasekey
+# PRODUCT_EXTRA_RECOVERY_KEYS := $(PROD_CERTS)/releasekey
