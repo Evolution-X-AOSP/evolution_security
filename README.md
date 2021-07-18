@@ -25,6 +25,8 @@ BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 
 Please refer to AOSP documentation on AVB implementation for your device.
 
+Please make sure your current AVB configuration does not conflict with what you are trying to achieve
+
 Please note that a clean flash is required when build signing keys get changed.
 
 Please save your private keys to use in future builds, otherwise you would have to generate new keys, which would require further clean flashes. 
