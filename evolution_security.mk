@@ -24,6 +24,8 @@ PROD_CERTS := vendor/evolution/build/target/product/security
 # investigate,
 # Explicitly define the default key.
 #
+# You can reenable these on demand.
 # PRODUCT_DEFAULT_DEV_CERTIFICATE := $(PROD_CERTS)/releasekey
-PRODUCT_OTA_PUBLIC_KEYS := $(PROD_CERTS)/releasekey.x509.pem
+# PRODUCT_OTA_PUBLIC_KEYS := $(PROD_CERTS)/releasekey.x509.pem
+#
 PRODUCT_EXTRA_RECOVERY_KEYS := $(PROD_CERTS)/releasekey
